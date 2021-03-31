@@ -1,10 +1,14 @@
 import React from 'react'
 
 function Navbar() {
-    <div>
-        Home<br></br>
-        Search<br></br>
-    </div>
+    return(
+        <div>
+            <ul>
+                <li>Home</li>
+                <li>Search</li>
+            </ul>
+        </div>
+    )
 }
 
 export default Navbar;
