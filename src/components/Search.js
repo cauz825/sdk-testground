@@ -12,7 +12,7 @@ function Search() {
     return(
         <form>
             <input type='text' name='name' placeholder='Card Name' />
-            <button onSubmit={handleSearch} type='submit'>Search</button>
+            <button onSubmit={handleSearch()} type='submit'>Search</button>
         </form>
     )
 }
