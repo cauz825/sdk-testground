@@ -12,7 +12,13 @@ function Search() {
 
     function handleSearch(e) {
         e.preventDefault();
-        console.log(cardName)
+        mtg.card.all({ name: cardName })
+        .on('data', result => {
+            displayCard(result) })
+    }
+
+    function displayCard(cards) {
+        console.log(cards)
     }
 
     return(
